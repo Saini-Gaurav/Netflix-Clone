@@ -10,18 +10,18 @@ import { auth } from "../utils/firebase";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
 
-  const [errorMessage, setErrorMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);;
 
-  const name = useRef('')
-  const email = useRef('');
-  const password = useRef('');
+  const name = useRef(null)
+  const email = useRef(null);
+  const password = useRef(null);
 
   const handleButtonClick = () => {
     //validate the form data
     const message = checkValidData(
-      name.current.value,
-      email.current.value,
-      password.current.value
+      name.current?.value,
+      email.current?.value,
+      password.current?.value
     );
     setErrorMessage(message);
     if (message) {
