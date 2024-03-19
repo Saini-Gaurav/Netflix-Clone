@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   useEffect(()=>{
-    onAuthStateChanged(auth, (user) => {
+   const unsubscribe =  onAuthStateChanged(auth, (user) => {
       if (user) {
         const {uid, email, displayName, photoURL} = user;
         dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}))  
@@ -39,12 +39,15 @@ const Header = () => {
       }
     });
 
+    // Unsubcribe when components unmount
+    return ()=> unsubscribe();
+
   }, [])
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
-      {user && <div className="flex">
-        <img className="h-10 w-10 mx-auto md:mx-0" alt="usericon" src={user?.photoURL} />
+      {user && <div className="flex p-2">
+        <img className="h-8 w-8 mt-4 mx-auto md:mx-0" alt="usericon" src={user?.photoURL} />
         <button onClick={handleSignOut} className="font-bold text-white">
           (Sign Out)
         </button>
