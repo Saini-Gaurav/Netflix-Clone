@@ -7,11 +7,11 @@ import MainContainer from './MainContainer';
 const Browse = () => {
   useNowPlayingMovies();
   return (
-    <div>
+    <>
       <Header />
       <MainContainer />
       <SecondaryContainer />
-    </div>
+    </>
   )
 }
 
