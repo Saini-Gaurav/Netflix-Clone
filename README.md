@@ -35,6 +35,7 @@
 - TMDB IMG CDN URL
 - usePopularMovies custom hook
 - Fetching Top Rated Movies with the help of useTopRatedMovies custom hook
+- Fetching UpComing Movies with the help of useUpComingMovies custom hook
 
 # Features:
 - Login / Sign Up 
