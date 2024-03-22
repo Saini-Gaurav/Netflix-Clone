@@ -34,6 +34,7 @@
 - Build Movie Card
 - TMDB IMG CDN URL
 - usePopularMovies custom hook
+- Fetching Top Rated Movies with the help of useTopRatedMovies custom hook
 
 # Features:
 - Login / Sign Up 

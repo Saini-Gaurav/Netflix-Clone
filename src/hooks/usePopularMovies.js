@@ -16,9 +16,9 @@ const usePopularMovies = () => {
     getPopularMovies();
   }, [])
   return (
-    <div>
+    <>
       
-    </div>
+    </>
   )
 }
 
