@@ -30,6 +30,10 @@
 - Embedded the Youtube Vedio make it autoplay & mute
 - Tailwind classes to make main container look good
 - Build Secondary Component
+- Build Movie List
+- Build Movie Card
+- TMDB IMG CDN URL
+- usePopularMovies custom hook
 
 # Features:
 - Login / Sign Up 
