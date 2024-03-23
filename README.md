@@ -36,7 +36,9 @@
 - usePopularMovies custom hook
 - Fetching Top Rated Movies with the help of useTopRatedMovies custom hook
 - Fetching UpComing Movies with the help of useUpComingMovies custom hook
-- GPT Search feature
+- GPT Search Page
+- GPT Search Bar
+- (Bonus) Multi-language feature in our App
 
 # Features:
 - Login / Sign Up 
